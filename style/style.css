@@ -1,0 +1,43 @@
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+ background-color: #F7ECDE;
+    font-family: "PT Sans Caption", sans-serif;
+    
+}
+.item{
+    position: relative;
+   
+}
+.item::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 0.5s ease-in;
+    z-index: -1;
+}
+.item:hover::before{
+    height:50%;
+}
+.Bookmark{
+    border-top:3px ;
+    border-bottom:3px ;
+    border-style: dotted;
+}
+.text p{ 
+    padding: 5px;
+    border-bottom: 2px;
+    
+    border-style: dotted;
+}

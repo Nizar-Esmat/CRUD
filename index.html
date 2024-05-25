@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<link rel="stylesheet" href="style/bootstrap.min.css">
+<link rel="stylesheet" href="style/all.min.css">
+<link rel="stylesheet" href="./style/style.css">
+    <title>CRUD_TASK</title>
+</head>
+<body>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <p>Site name must contain at least 3 characters</p>
+                   <p>Site URL must be a valid one</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container d-flex flex-column justify-content-center align-items-center" >
+    <div class="my-5  text-center">
+        <h1 class="title-content item">Bookmarker</h1>
+    </div>
+
+    <div class="Bookmark " >
+        <div class="row g-3 py-3 align-items-center">
+            <div class="col-md-12">
+              <label for="namePattern" class="col-form-label fw-bold fs-4">Name</label>
+            </div>
+            <div class="col-md-12">
+              <input type="name" id="namePattern" class="form-control " oninput="validateInputs(this)" >
+            </div>
+            <div class="col-md-12">
+              <span id="NameHelpInline" class="form-text">
+                Must be 8-20 characters long.
+              </span>
+            </div>
+          </div>
+ 
+
+          <div class="row g-3 py-3  align-items-center">
+            <div class="col-md-12">
+              <label for="urlPattern" class="col-form-label fw-bold fs-4">URL</label>
+            </div>
+            <div class="col-md-12">
+              <input type="url" id="urlPattern" class="form-control   " aria-describedby="passwordHelpInline"   oninput="validateInputs(this)" >
+            </div>
+            <div class="col-md-12">
+              <span id="passwordHelpInline" class="form-text">
+                Must be a real URL.
+              </span>
+            </div>
+          </div>
+          <div class="text-center">
+          <button type="button" class="btn btn-danger px-4 py-2 my-3  submit" > supmit</button>
+        </div>
+
+    </div>
+</div>
+
+    <div class="alert alert-danger d-none" role="alert">
+        A simple danger alert—check it out!
+    </div>
+
+<div class="my_submit container  ">
+
+
+</div>
+
+
+  <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>
